@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone - Read & Write Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        header {
+            background-color: white;
+            border-bottom: 1px solid lightgray;
+            padding: 20px 45px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            align-items: center;
+        }
+        .site-logo {
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'Times New Roman', serif;
+            color: black;
+        }
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-list a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 10px 15px;
+        }
+        .nav-list a:hover {
+            background-color: rgba(10, 8, 8, 0.05);
+            color: black;
+        }
+        .btn-get {
+            color: white;
+            padding: 10px 20px;
+            font-size: 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+        }
+        .btn-get:hover {
+            background-color: #333;
+        }
+        .main-section {
+            background-color: white;
+            border-bottom: 1px solid lightgray;
+            padding: 40px 45px 30px 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-content h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 90px;
+            margin-bottom: 40px;
+            color: black;
+        }
+        .main-content p {
+            font-size: 25px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            color: black;
+        }
+        .btn-start {
+            background-color: black;
+            color: white;
+            padding: 15px 50px;
+            font-size: 20px;
+            display: inline-block;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+        .btn-start:hover {
+            background-color: #333;
+        }
+        .main-image {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .main-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .container {
+            padding: 40px 45px;
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .section-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 50px;
+            margin-bottom: 30px;
+            color: black;
+        }
+        .section-text {
+            font-size: 20px;
+            line-height: 1.5;
+            color: black;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+        }
+        .card:hover {
+            border-color: black;
+        }
+        .card-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: black;
+        }
+        .card-description {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+        footer {
+            background-color: white;
+            padding: 40px 45px;
+            color: black;
+            border-top: 1px solid lightgray;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .footer-nav a {
+            color: #555;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .footer-nav a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="site-logo">Medium</a>
+        <ul class="nav-list">
+            <li><a href="#about">Our story</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#write">Write</a></li>
+            <li><a href="#signin">Sign in</a></li>
+            <li><a href="#" class="btn-get">Get started</a></li>
+        </ul>
+    </header>
+    <section class="main-section">
+        <div class="main-content">
+            <h1>Human stories & ideas</h1>
+            <p>This is not the official medium page it is a clone.</p>
+            <a href="#articles" class="btn-start">Start reading</a>
+        </div>
+        <div class="main-image">
+            <img src="pic.png" alt="Medium official image">
+        </div>
+    </section>
+    <section class="container" id="about">
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-text">Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic.</p>
+        <p class="section-text">We believe that words have the power to change the world. Every day, millions of people come to Medium to learn something new and share their own ideas.</p>
+    </section>
+    <section class="container" id="features">
+        <h2 class="section-title">Why Medium?</h2>
+        <p class="section-text">Discover what makes Medium the best place to read and write online.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h3 class="card-title">Quality Content</h3>
+                <p class="card-description">Access thousands of stories from writers and experts on topics you care about most.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Easy Publishing</h3>
+                <p class="card-description">Share your voice with the world. Our simple editor makes it easy to create beautiful stories.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Growing Community</h3>
+                <p class="card-description">Connect with readers and writers from around the world who share your interests.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="membership">
+        <h2 class="section-title">Become a Member</h2>
+        <p class="section-text">Get unlimited access to the best of Medium and support writers you read most.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h3 class="card-title">Read More</h3>
+                <p class="card-description">Access all stories on Medium without limits. Read as much as you want.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Support Writers</h3>
+                <p class="card-description">Your membership directly supports the writers and publications you read most.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Listen Anywhere</h3>
+                <p class="card-description">Enjoy audio versions of articles. Listen to stories while you commute or exercise.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="write">
+        <h2 class="section-title">Share Your Story</h2>
+        <p class="section-text">Write on Medium and reach millions of readers around the world.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h3 class="card-title">Simple Tools</h3>
+                <p class="card-description">Focus on your writing with our distraction-free editor and formatting tools.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Built-in Audience</h3>
+                <p class="card-description">Get discovered by readers who are interested in what you have to say.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Earn Income</h3>
+                <p class="card-description">Join our Partner Program and earn money from your writing based on reader engagement.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="signin">
+        <h2 class="section-title">Join Our Community</h2>
+        <p class="section-text">Sign up today to start reading, writing, and connecting with others on Medium.</p>
+        <p class="section-text">Create your free account and discover stories that matter to you.</p>
+    </section>
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Text to speech</a></li>
+            <li><a href="#">Teams</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
