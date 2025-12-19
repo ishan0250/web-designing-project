@@ -8,167 +8,308 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box
+            box-sizing: border-box;
         }
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            color: #e7e9ea;
         }
+        
         header {
-            background-color: white;
-            border-bottom: 1px solid lightgray;
-            padding: 20px 45px;
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            align-items: center;
-        }
-        .site-logo {
-            font-size: 30px;
-            font-weight: 700;
-            font-family: 'Times New Roman', serif;
-            color: black;
-        }
-        .nav-list {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 30px;
-            list-style: none;
-        }
-        .nav-list a {
-            color: black;
-            text-decoration: none;
-            font-size: 15px;
-            padding: 10px 15px;
-        }
-        .nav-list a:hover {
-            background-color: rgba(10, 8, 8, 0.05);
-            color: black;
-        }
-        .btn-get {
-            color: white;
-            padding: 10px 20px;
-            font-size: 15px;
-            text-decoration: none;
-            border-radius: 25px;
-            display: inline-block;
-        }
-        .btn-get:hover {
-            background-color: #333;
-        }
-        .main-section {
-            background-color: white;
-            border-bottom: 1px solid lightgray;
-            padding: 40px 45px 30px 45px;
+            background: #000000;
+            padding: 20px 50px;
+            border-bottom: 1px solid #2f3336;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        
+        .site-logo {
+            font-size: 35px;
+            font-weight: 700;
+            font-family: 'Times New Roman', serif;
+            color:white;
+            text-decoration: none;
+        }
+        
+        .nav-list {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-list a {
+            color: #71767b;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 18px;
+            font-weight: 500;
+            border-radius: 25px;
+        }
+        
+        .nav-list a:hover {
+            background-color: rgba(29, 161, 242, 0.1);
+            color: #1da1f2;
+        }
+        
+        .btn-get {
+            color: white;
+            padding: 12px 30px;
+            font-size: 15px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            background: #1da1f2;
+            border: 2px solid #1da1f2;
+            font-weight: 600;
+        }
+        
+        .btn-get:hover {
+            background: transparent;
+            color: #1da1f2;
+        }
+        
+        .main-section {
+            background: #000000;
+            padding: 100px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            border-bottom: 1px solid #2f3336;
+        }
+        
+        .main-content {
+            flex: 1;
+            max-width: 650px;
+        }
+        
         .main-content h1 {
             font-family: 'Times New Roman', serif;
-            font-size: 100px;
+            font-size: 110px;
             font-weight: 400;
-            line-height: 90px;
-            margin-bottom: 40px;
-            color: black;
+            line-height: 100px;
+            margin-bottom: 35px;
+            color:white;
         }
+        
         .main-content p {
-            font-size: 25px;
-            margin-bottom: 30px;
-            line-height: 1.5;
-            color: black;
+            font-size: 24px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+            color: #71767b;
         }
+        
         .btn-start {
-            background-color: black;
+            background: #1da1f2;
             color: white;
-            padding: 15px 50px;
-            font-size: 20px;
+            padding: 16px 50px;
+            font-size: 18px;
             display: inline-block;
             border-radius: 30px;
             text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #1da1f2;
         }
+        
         .btn-start:hover {
-            background-color: #333;
+            background: transparent;
+            color: #1da1f2;
         }
+        
         .main-image {
-            width: 400px;
-            height: 400px;
-            background-color: rgba(0, 0, 0, 0.05);
+            width: 420px;
+            height: 420px;
+            background: rgba(29, 161, 242, 0.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #2f3336;
         }
+        
         .main-image img {
             max-width: 100%;
             max-height: 100%;
+            object-fit: contain;
         }
+        
         .container {
-            padding: 40px 45px;
+            padding: 80px 50px;
             max-width: 1400px;
             margin: 0 auto;
-            background-color: white;
+            background: #000000;
         }
+        
         .section-title {
             font-family: 'Times New Roman', serif;
-            font-size: 50px;
+            font-size: 55px;
             margin-bottom: 30px;
-            color: black;
+            color: #e7e9ea;
+            font-weight: 400;
         }
+        
         .section-text {
             font-size: 20px;
-            line-height: 1.5;
-            color: black;
-            margin-bottom: 20px;
-            max-width: 800px;
+            line-height: 1.7;
+            color: #e7e9ea;
+            margin-bottom: 25px;
+            max-width: 850px;
         }
+        
         .card-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-top: 40px;
+            gap: 35px;
+            margin-top: 50px;
         }
+        
         .card {
-            background-color: #f5f5f5;
-            padding: 30px;
-            border-radius: 10px;
-            border: 1px solid lightgray;
+            background: #16181c;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #2f3336;
         }
+        
         .card:hover {
-            border-color: black;
+            border-color: #1da1f2;
+            background: #1c1f23;
         }
+        
         .card-title {
             font-family: 'Times New Roman', serif;
-            font-size: 25px;
-            margin-bottom: 15px;
-            color: black;
+            font-size: 30px;
+            margin-bottom: 18px;
+            color: #e7e9ea;
+            font-weight: 600;
         }
+        
         .card-description {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.5;
+            font-size: 17px;
+            color: #71767b;
+            line-height: 1.7;
         }
+        
         footer {
-            background-color: white;
-            padding: 40px 45px;
-            color: black;
-            border-top: 1px solid lightgray;
+            background: #000000;
+            padding: 50px;
+            border-top: 1px solid #2f3336;
         }
+        
         .footer-nav {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 35px;
             list-style: none;
             flex-wrap: wrap;
         }
+        
         .footer-nav a {
-            color: #555;
+            color: #71767b;
             font-size: 15px;
             text-decoration: none;
+            padding: 8px 12px;
         }
+        
         .footer-nav a:hover {
-            color: black;
+            color: #1da1f2;
+        }
+        
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            margin-top: 50px;
+        }
+        
+        .story-card {
+            background: #16181c;
+            border-radius: 12px;
+            border: 1px solid #2f3336;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 200px 1fr;
+        }
+        
+        .story-card:hover {
+            border-color: #1da1f2;
+            box-shadow: 0 10px 30px rgba(29, 161, 242, 0.15);
+            background: #1c1f23;
+        }
+        
+        .story-image {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #2f3336;
+            overflow: hidden;
+        }
+        
+        .story-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .story-content {
+            padding: 25px;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            gap: 12px;
+        }
+        
+        .story-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            color: #e7e9ea;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+        
+        .story-date {
+            color: #71767b;
+            font-size: 14px;
+        }
+        
+        .story-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 24px;
+            color: #e7e9ea;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        .story-excerpt {
+            color: #71767b;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        .story-tags {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            color: #1da1f2;
+            font-size: 14px;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -183,6 +324,7 @@
             <li><a href="#" class="btn-get">Get started</a></li>
         </ul>
     </header>
+    
     <section class="main-section">
         <div class="main-content">
             <h1>Human stories & ideas</h1>
@@ -193,11 +335,125 @@
             <img src="pic.png" alt="Medium official image">
         </div>
     </section>
+    
+    <section class="container" id="articles">
+        <h2 class="section-title">Stories That Matter</h2>
+        <p class="section-text">Deep dives into the issues shaping our society, economy, and future.</p>
+        
+        <div class="stories-grid">
+            <div class="story-card">
+                <div class="story-image">
+                    <img src="https://aihms.in/blog/wp-content/uploads/2020/08/mental1.jpg" alt="Mental Health Matters">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <div class="author-info">
+                            <div class="author-name">Ishansh Paliwal</div>
+                            <div class="story-date">Dec 12, 2024 </div>
+                        </div>
+                    </div>
+                    <h3 class="story-title">The Silent Crisis:Mental Health Is India's Next Emergency</h3>
+                    <p class="story-excerpt">With one in seven Indians affected by mental health issues ; we're facing a healthcare crisis that nobody wants to talk about.</p>
+                    <div class="story-tags">
+                        <span class="tag">#MentalHealth</span>
+                        <span class="tag">#Healthcare</span>
+                        <span class="tag">#Society</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-image">
+                    <img src="https://rogermontgomery.com/wp-content/uploads/2018/12/17122018_capitalism.jpg" alt="The Cost of Everything">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <div class="author-info">
+                            <div class="author-name">Ashutosh Yadav</div>
+                            <div class="story-date">Dec 14, 2025</div>
+                        </div>
+                    </div>
+                    <h3 class="story-title">Capitalism: Capitalism Is Reshaping Indian Society</h3>
+                    <p class="story-excerpt">From healthcare to education, everything has become a commodity.How money hinders the baisc rights of an individual.</p>
+                    <div class="story-tags">
+                        <span class="tag">#Economy</span>
+                        <span class="tag">#Capitalism</span>
+                        <span class="tag">#SocialIssues</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-image">
+                    <img src="https://www.ecoleglobale.com/blog/wp-content/uploads/2023/01/What-are-The-Significant-Gaps-In-The-Indian-Education-System.png" alt="Degrees Without Knowledge">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <div class="author-info">
+                            <div class="author-name">Shivam</div>
+                            <div class="story-date">Dec 15, 2025 </div>
+                        </div>
+                    </div>
+                    <h3 class="story-title">Degrees Without Knowledge: Failure of India's Education System</h3>
+                    <p class="story-excerpt">We're producing millions of graduates each year, but are they really educated? </p>
+                    <div class="story-tags">
+                        <span class="tag">#Education</span>
+                        <span class="tag">#Policy</span>
+                        <span class="tag">#Reform</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-image">
+                    <img src="https://m.media-amazon.com/images/I/61tgh2wZy7L._AC_UF1000,1000_QL80_.jpg" alt="Corrupted Bureaucracy">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <div class="author-info">
+                            <div class="author-name">Devansh Kumar</div>
+                            <div class="story-date">Dec 16, 2025 </div>
+                        </div>
+                    </div>
+                    <h3 class="story-title">Corruption: Indian Bureaucracy</h3>
+                    <p class="story-excerpt">An investigative deep dive into how corruption has become normalized at every level of governance.</p>
+                    <div class="story-tags">
+                        <span class="tag">#Corruption</span>
+                        <span class="tag">#Politics</span>
+                        <span class="tag">#Investigation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Shri_Narendra_Modi%2C_Prime_Minister_of_India_%283x4_cropped%29.jpg" alt="Democracy in Question">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <div class="author-info">
+                            <div class="author-name">Rahul Gandhi</div>
+                            <div class="story-date">Dec 18, 2025 </div>
+                        </div>
+                    </div>
+                    <h3 class="story-title">Indian Politics:India's Democratic Future</h3>
+                    <p class="story-excerpt"> A critical analysis of current political trends and their affects on society</p>
+                    <div class="story-tags">
+                        <span class="tag">#Politics</span>
+                        <span class="tag">#Democracy</span>
+                        <span class="tag">#Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="container" id="about">
         <h2 class="section-title">Our Story</h2>
         <p class="section-text">Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic.</p>
         <p class="section-text">We believe that words have the power to change the world. Every day, millions of people come to Medium to learn something new and share their own ideas.</p>
     </section>
+    
     <section class="container" id="features">
         <h2 class="section-title">Why Medium?</h2>
         <p class="section-text">Discover what makes Medium the best place to read and write online.</p>
@@ -216,6 +472,7 @@
             </div>
         </div>
     </section>
+    
     <section class="container" id="membership">
         <h2 class="section-title">Become a Member</h2>
         <p class="section-text">Get unlimited access to the best of Medium and support writers you read most.</p>
@@ -234,6 +491,7 @@
             </div>
         </div>
     </section>
+    
     <section class="container" id="write">
         <h2 class="section-title">Share Your Story</h2>
         <p class="section-text">Write on Medium and reach millions of readers around the world.</p>
@@ -252,11 +510,13 @@
             </div>
         </div>
     </section>
+    
     <section class="container" id="signin">
         <h2 class="section-title">Join Our Community</h2>
         <p class="section-text">Sign up today to start reading, writing, and connecting with others on Medium.</p>
         <p class="section-text">Create your free account and discover stories that matter to you.</p>
     </section>
+    
     <footer>
         <ul class="footer-nav">
             <li><a href="#">Help</a></li>
